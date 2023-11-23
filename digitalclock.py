@@ -4,7 +4,7 @@ import sevseg  # Imports our sevseg.py program.
 try:
     while True:  # Main program loop.
         # Clear the screen by printing several newlines:
-        print("\n " * 60)
+        print("\n " * 60v)
 
         # Get current time from the computer's clock:
         currentTime = time.localtime()
