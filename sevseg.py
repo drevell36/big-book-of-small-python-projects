@@ -19,7 +19,7 @@ def getSevSegStr(number, minWidth=0):
     for i, numeral in enumerate(number):
         if numeral == ".":  # Render the decimal point.
             rows[0] += " "
-            rows[1] += ""
+            rows[1] += " "
             rows[2] += "."
             continue  # Skip the space in between digits.
         elif numeral == "-":  # Render the negative sign:
@@ -43,7 +43,7 @@ def getSevSegStr(number, minWidth=0):
             rows[1] += " __|"
             rows[2] += " __|"
         elif numeral == "4":  # Render the 4.
-            rows[0] += " "
+            rows[0] += "    "
             rows[1] += "|__|"
             rows[2] += "   |"
         elif numeral == "5":  # Render the 5.
@@ -74,7 +74,7 @@ def getSevSegStr(number, minWidth=0):
             rows[1] += " "
             rows[2] += " "
 
-    return " \n".join(rows)
+    return "\n".join(rows)
 
 
 # If this program isn't being imported, display the numbers 00 to 99.
